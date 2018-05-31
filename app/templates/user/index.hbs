@@ -1,0 +1,8 @@
+<h3>Liste des utilisateurs</h3>
+<ul>
+{{#each model as |user|}}
+<li>  {{#link-to "user.detail" user.id}}{{user.first}} - {{user.last}}{{/link-to}}
+</li>
+{{/each}}
+
+</ul>

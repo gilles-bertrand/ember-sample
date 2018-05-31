@@ -1,0 +1,8 @@
+<h3>Détails de l'utilisateur</h3>
+<div>
+Name : {{model.first}} - {{model.last}}<br />
+Email : {{model.email}}
+</div>
+{{#link-to 'user'}} Back {{/link-to}}
+{{#link-to 'user.edit' model.id}}edit{{/link-to}}
+{{outlet}}

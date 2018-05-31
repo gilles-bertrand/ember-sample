@@ -1,0 +1,16 @@
+<h3>edit {{model.first}},{{model.last}}</h3>
+<form onsubmit={{action "saveUser"}}>
+  <div>
+    <label>FIrst</label>
+    {{input type="text" placeholder="first" value=model.first}}
+  </div>
+  <div>
+    <label>Last</label>
+    {{input type="text" placeholder="first" value=model.last}}
+  </div>
+  <div>
+    <label>Email</label>
+    {{input type="text" placeholder="first" value=model.email}}
+  </div>
+  <button type="submit">Submit</button>
+</form>
